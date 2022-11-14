@@ -1,0 +1,108 @@
+<!--
+***************************************************
+**Elaborado por: Christian Michel Alvarez Sanchez**
+**Fecha: Noviembre 2022****************************
+**Práctica:POKEDEX*********************************
+***************************************************
+***************************************************
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+        <link rel="stylesheet" href="/View/pokedex.css">
+    <title>PokeDex</title>
+</head>
+<body>
+    
+ <!--Contenedor-->
+    <section class="pokedex">
+
+       <!--Seccion de pokemon y busqueda-->
+
+       
+
+
+        <div class="busqueda-container">
+            <div class="ContenedorCirculos">
+                <div class="CirculoParpadeante intermitente"></div>
+                <div class="Circulo2"></div>
+                <div class="Circulo3"></div>
+                <div class="Circulo4"></div>
+            </div>
+        
+
+            <div class="pokemones">
+                <img src="/View/pokeball.png" id="pokeimage" alt="pokemon">
+            </div>
+        
+
+            <div class="buscar-pokemones">
+                <button class="btn-buscar" onclick="fetchpokemon()">Buscar</button>
+                <input type="text" class="input-buscar" id="pokename" name="pokename" placeholder="Ingresa pokemon">
+                <img src="/View/Cruceta.gif" alt="cruzeta" class="Cruzeta">
+            </div>
+           
+        </div>
+
+            
+        </div>
+
+
+     <!--Sección de Pantalla con información-->
+    <div class="informacion-container">
+
+        <div class="pantalla-informacion" >
+            <h1 id="pokeinfo"></h1>
+            <br>
+            <h3 id="poketype"></h3>
+            <br>
+            <h3 id="pokeabilities"></h3>
+        </div>
+
+        <div class="cuadrados-info">
+           <div class="square1"> <img src="/View/cuadro_generico.png" id="square1_1" alt="" class="sprites"></div>
+           <div class="square2"> <img src="/View/cuadro_generico.png" id="square2_2" alt="" class="sprites"> </div>
+           <div class="square3"> <img src="/View/cuadro_generico.png" id="square3_3" alt="" class="sprites"> </div>
+           <div class="square4"> <img src="/View/cuadro_generico.png" id="square4_4" alt="" class="sprites"> </div>
+           <div class="square5"> </div>
+           <div class="square6"></div>
+           <div class="square7"></div>
+           <div class="square8"></div>
+           <div class="square9"></div>
+           <div class="square10"></div>
+        </div>
+      
+
+        <div class="ContainerOvalos">
+            <img src="/View/ovalo.png" alt="start" class="BotonOvalo">
+            <img src="/View/ovalo.png" alt="start" class="BotonOvalo">
+        </div>
+
+        <div class="ContainerCuadrado">
+            <img src="/View/boton_gris.png" alt="boton" class="ImagenCuadrado">
+            <img src="/View/boton_gris.png" alt="boton" class="ImagenCuadrado">
+        </div>
+
+        <div class="ContainerPeso">
+
+            <div class="DivAltura">
+                <h3 class="AlturaText" id="AlturaText"></h3>
+            </div>
+
+            <div class="DivPeso">
+                <h3 class="PesoText" id="PesoText"></h3>
+            </div>
+
+        </div>
+
+        
+    </div>
+           
+    </section>
+</body>
+<script type="text/JavaScript" src="./Controller/pokedex.js"></script>
+   
+</html>
